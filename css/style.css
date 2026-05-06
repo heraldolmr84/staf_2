@@ -13,7 +13,6 @@ body {
 }
 
 .whatsapp {
-    position: fixed;
     width: 50px;
     height: 50px;
     bottom: 40px;
@@ -24,6 +23,7 @@ body {
     text-align: center;
     font-size: 35px;
     box-shadow: 1px 1px 2px #888;
+    border: solid .7px;
 }
 
 .whatsapp:hover {
@@ -37,7 +37,8 @@ body {
 }
 
 #cabecalho {
-    height: 75px;
+    height: 90px;
+    padding: 0;
 }
 
 #menu a {
@@ -47,6 +48,24 @@ body {
 
 .navbar {
     background-color: #009600;
+}
+
+.navbar-brand {
+    display: flex;
+}
+
+.navbar-brand div h2 {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    margin: 0 0 0 12px;
+}
+
+.navbar-brand div p {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0 0 0 12px;
 }
 
 .navbar-expand-lg .navbar-nav .nav-link {
@@ -74,12 +93,11 @@ main {
 
 #carouselIndicators {
     height: 90%;
-    top: 50%
 }
 
 .carousel-caption {
 
-    height: 150px;
+    height: 300px;
 }
 
 .carousel-caption h2 {
@@ -196,7 +214,7 @@ main {
     font-weight: bolder;
 }
 
-#valores-green p {
+#valores-green p {+55 (41) 3308-2577
     font-size: 1em;
     margin: 3% 3%;
     text-align: left;
@@ -322,6 +340,11 @@ main {
     color: #FFF;
 }
 
+.modal-body p {
+    text-align: left;
+    text-indent: 15px;
+}
+
 /*Rodapé*/
 #rodape {
     margin: 0;
@@ -332,12 +355,17 @@ main {
 }
 
 #rodape .container {
-    height: 350px;
+    min-height: 480px;
     margin: 25px auto;
 }
 
 .rodape-item {
     margin: 25px auto;
+}
+
+.rodape-item p {
+    text-align: center;
+    font-size: 1.2em;
 }
 
 .rodape-item h5 {
@@ -396,6 +424,10 @@ main {
 
 #rod-address address i {
     margin-right: 15px;
+}
+
+#rod-address span {
+    font-size: 1.2em;
 }
 
 #social {
@@ -478,24 +510,22 @@ main {
     /*rodape*/
     #rodape {
         padding: 1px;
+        overflow: hidden;
     }
 
     #rodape .container {
-        margin-bottom: 0;
+        margin-bottom: 0;        
+        margin: 25px auto;
     }
 
     #rodape .row {
         flex-direction: column;
     }
 
-    #rodape .container {
-        height: 900px;
-        margin: 25px auto;
-    }
-
     .rodape-item {
-        width: 95%;
+        width: 90%;
         margin: 5px auto;
+        border: #FFF solid 1px;
     }
 
     .rodape-item map iframe {
